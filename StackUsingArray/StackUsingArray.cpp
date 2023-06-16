@@ -56,6 +56,7 @@ public:
 
 int main() {
 	StackArray SA;
+	char ch;
 	while (true) {
 		cout << "\nMenu" << endl;
 		cout << "1. Push" << endl;
@@ -63,5 +64,11 @@ int main() {
 		cout << "3. Display" << endl;
 		cout << "4. Exit" << endl;
 		cout << "Enter number 1-4." << endl;
+		cin >> ch;
+		switch (ch) {
+		case '1': {
+
+		}
+		}
 	}
 }
