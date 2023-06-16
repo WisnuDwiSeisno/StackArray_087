@@ -28,9 +28,18 @@ public:
 	}
 
 	void pop() {
-		if (empty()) //step 1
+		if (empty()) { //step 1
 			cout << "\n Stack is empty. Cannot pop." << endl;	//1. a
-		return; // 1. b
+			return; // 1. b
+		}
+		cout << "\n The Popped element is : " << stack_array[top] << endl; //step 2
+		top--; // step 3 decrement
 	}
-	cout << "\n The Popped element is : " << stack_array[top] << endl; //step 2
+
+	//method for check if data is empty
+	bool empty() {
+		return (top == -1);
+	}
+
+
 };
