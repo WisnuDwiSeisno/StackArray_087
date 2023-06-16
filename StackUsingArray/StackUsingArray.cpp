@@ -67,7 +67,16 @@ int main() {
 		cin >> ch;
 		switch (ch) {
 		case '1': {
-
+			SA.push();
+			break;
+		}
+		case '2': {
+			if (SA.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+			}
+			SA.pop();
+			break;
 		}
 		}
 	}
