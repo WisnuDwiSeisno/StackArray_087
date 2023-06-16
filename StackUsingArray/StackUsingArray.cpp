@@ -15,7 +15,7 @@ public:
 
 	void push() {
 		int element;
-		cout << "Masukan Nilai";
+		cout << "Masukan Nilai: ";
 		cin >> element;
 		if (top == 4) {
 			cout << "Number of data exceed the list" << endl;
@@ -25,7 +25,7 @@ public:
 		top++;
 		stack_array[top] = element;
 		cout << endl;
-		cout << element << "ditambahkan(pushed)" << endl;
+		cout << element << " ditambahkan(pushed)" << endl;
 	}
 
 	void pop() {
@@ -47,7 +47,7 @@ public:
 			cout << "\n Stack is Empty." << endl;
 		}
 		else {
-			for (int tmp = top; tmp >= 0; top--) {
+			for (int tmp = top; tmp >= 0; tmp--) {
 				cout << stack_array[tmp] << endl;
 			}
 		}
@@ -63,7 +63,7 @@ int main() {
 		cout << "2. Pop" << endl;
 		cout << "3. Display" << endl;
 		cout << "4. Exit" << endl;
-		cout << "Enter number 1-4." << endl;
+		cout << "Enter your choice: ";
 		cin >> ch;
 		switch (ch) {
 		case '1': {
@@ -80,6 +80,11 @@ int main() {
 
 		case'3':
 			SA.display();
+			break;
+		case '4':
+			return 0;
+		default:
+			cout << "\n Invalid Choice." << endl;
 			break;
 		}
 	}
