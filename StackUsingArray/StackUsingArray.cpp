@@ -13,7 +13,7 @@ public:
 		top = -1;
 	}
 
-	int push(int element) {
+	void push() {
 		if (top == 4) {
 			cout << "Number of data exceed the list" << endl;
 			return 0;
@@ -41,4 +41,21 @@ public:
 		return (top == -1);
 	}
 
+	void display() {
+		if (empty()) {
+			cout << "\n Stack is Empty." << endl;
+		}
+		else {
+			for (int tmp = top; tmp >= 0; top--) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
+	}
 };
+
+int main() {
+	StackArray SA;
+	while (true) {
+
+	}
+}
