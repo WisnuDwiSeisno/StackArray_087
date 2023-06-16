@@ -14,17 +14,18 @@ public:
 	}
 
 	void push() {
+		int element;
+		cout << "Masukan Nilai";
+		cin >> element;
 		if (top == 4) {
 			cout << "Number of data exceed the list" << endl;
-			return 0;
+			return ;
 		}
 
 		top++;
 		stack_array[top] = element;
 		cout << endl;
 		cout << element << "ditambahkan(pushed)" << endl;
-
-		return element;
 	}
 
 	void pop() {
