@@ -70,14 +70,17 @@ int main() {
 			SA.push();
 			break;
 		}
-		case '2': {
+		case '2': 
 			if (SA.empty()) {
 				cout << "\nStack is empty." << endl;
 				break;
 			}
 			SA.pop();
 			break;
-		}
+
+		case'3':
+			SA.display();
+			break;
 		}
 	}
 }
